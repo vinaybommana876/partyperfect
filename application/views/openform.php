@@ -8,11 +8,71 @@
 	<?php include "partials/header.php"; ?>
 	<?php include "partials/pop_up.php"; ?>
 
+	<style>
+		#main>.location:first-of-type {
+			width: 60%;
+		}
+
+		@media (max-width: 768px) {
+
+			#main>.location:first-of-type {
+				width: 100%;
+			}
+
+			tbody td:after {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				content: '';
+				width: 30px;
+				height: 30px;
+				margin: 0 auto;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+				border-radius: 50%;
+				-webkit-transition: 0.3s;
+				-o-transition: 0.3s;
+				transition: 0.3s;
+				z-index: -1;
+			}
+
+			.head-day {
+				font-size: 5em;
+				line-height: 1;
+				color: #fff;
+			}
+
+			.calendar-wrap {
+				background: #fff;
+				padding: 10px 10px 10px 10px;
+			}
+
+			#calendar tr {
+				height: 1em;
+			}
+
+			section {
+				padding: 10px 0;
+				overflow: hidden;
+			}
+
+			.about-boxes {
+				background: url(../img/about-boxes-bg.jpg) center top no-repeat fixed;
+				background-size: cover;
+				padding: 10px 0 30px 0;
+				position: relative;
+			}
+		}
+	</style>
+
 	<main id="main">
 		<section id="about-boxes" class="about-boxes">
 			<div class="container">
 				<div id="main" class="d-flex flex-wrap justify-content-between">
-					<div class="location" style="width:60%;">
+					<div class="location">
 						<div class="container">
 							<div style="width:100%;">
 								<div class="location" style="width:100%;  box-shadow: none;">
@@ -149,11 +209,11 @@
 
 	<?php include "partials/footer.php"; ?>
 
-<?php include "partials/scripts.php"; ?>
+	<?php include "partials/scripts.php"; ?>
 
-<?php include "partials/script.php"; ?>
-<?php include "partials/calender_script.php"; ?>
-	
+	<?php include "partials/script.php"; ?>
+	<?php include "partials/calender_script.php"; ?>
+
 </body>
 
 </html>
