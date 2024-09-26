@@ -51,28 +51,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 
 
-
-// $route['api/demo'] = 'api/ApiDemoController/index';
-
-// $route['api/emp'] = 'api/ApiEmpController/index';
-
 $route['default_controller'] = 'Dashboard';
-// $route['default_controller'] = 'Csv';
-
-
-
-// $route['default_controller'] = 'LinkController';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['datatable'] = 'DataTableController/index';
-// $route['controller/save_selected_buttons'] = 'Dashboard/save_selected_buttons';
 
 
-// Define custom routes
-// $route['url'] = 'UrlShortener/createShortURL';
-// $route['urls'] = 'UrlShortener/createShortURLs';
-// $route['(:any)'] = 'UrlShortener/redirectToLongURL/$1';
-// $route['r/(:any)'] = 'UrlShortener/redirectToLongURLs/$1';
-// $route['n/(:any)'] = 'UrlShortener/redirectToLongURLForNumber/$1';

@@ -7,17 +7,4 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ index.php/$1 [L]
     
-    # Second Rule
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ redirectedURL.php/$1 [L]
-
-    # Third Rule
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ upload_form.php/$1 [L]
-</IfModule>
-
-<IfModule mod_php5.c>
-php_value max_execution_time 300
 </IfModule>

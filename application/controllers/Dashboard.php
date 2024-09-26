@@ -41,8 +41,27 @@ class Dashboard extends CI_Controller
 
 	public function formdetails()
 	{
-		$this->load->view('formdetails');
+		if ($this->input->server('REQUEST_METHOD') === 'POST') {
+			$day = $this->input->post('day');
+			$month = $this->input->post('month');
+			$year = $this->input->post('year');
+			$slots = json_decode($this->input->post('slots'), true); // Decode the JSON string into an array
+
+			$viewData = [
+				'day' => $day,
+				'month' => $month,
+				'year' => $year,
+				'slots' => $slots
+			];
+
+			$this->load->view('formdetails', $viewData);
+		} else {
+			show_error('Invalid request method.', 405);
+		}
 	}
+
+
+
 
 	public function book_slots()
 	{
