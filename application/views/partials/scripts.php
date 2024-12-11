@@ -13,6 +13,7 @@
   <script src="<?php echo base_url('assets/js_calender/popper.js'); ?>"></script>
   <script src="<?php echo base_url('assets/js_calender/bootstrap.min.js'); ?>"></script>
   <script src="<?php echo base_url('assets/js_calender/main.js'); ?>"></script>
+  <script src="<?php echo base_url('assets/js/main_nav.js'); ?>"></script>
 
   <!-- Template Main JS File -->
   <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>

@@ -7,6 +7,13 @@
 
 
     <?php include "partials/header.php"; ?>
+    <style>
+        @media (max-width: 768px) {
+            #main{
+                height: 80%;   
+            }
+        }
+    </style>
     <?php include "partials/pop_up.php"; ?>
 
     <main id="main">

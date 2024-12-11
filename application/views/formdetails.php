@@ -79,7 +79,7 @@
     }
 
     .number-of-people {
-        display: flex;
+        /* display: flex; */
         align-items: center;
     }
 
@@ -92,7 +92,7 @@
     }
 
     .number-of-people input {
-        width: 50px;
+        width: 75%;
         text-align: center;
     }
 
@@ -115,6 +115,42 @@
 
     .summary-item:last-child {
         font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            display: block;
+        }
+
+        .overview {
+            margin-right: 0px;
+        }
+
+        .summary-item {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .about-boxes {
+            background-attachment: fixed;
+            padding: 0px 0 30px 0
+        }
+
+        .section-title {
+            padding-bottom: 0px;
+        }
+
+        .section-title p {
+            font-size: 25px;
+        }
+
+        .booking-summary {
+            margin-top: 10px;
+            max-width: none;
+        }
+        .number-of-people input {
+        width: 60%;
+    }
     }
 </style>
 
@@ -178,7 +214,7 @@
                                 <input type="text" id="booking-name" name="booking-name" placeholder="Type here" required>
                             </div>
                             <div style="padding-left:25px;">
-                                <label for="number-of-people">Number of people</label>
+                                <label for="number-of-people">No of people</label>
                                 <div class="number-of-people">
                                     <button type="button" onclick="changePeople(-1)">-</button>
                                     <input type="number" id="number-of-people" name="number-of-people" value="2" min="1" required>

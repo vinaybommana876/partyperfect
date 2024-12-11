@@ -2,7 +2,22 @@
 <html lang="en">
 
 <?php include 'partials/head.php'; ?>
+<style>
+  /* Dark Gradient for Header Background */
+#header {
+    background: linear-gradient(45deg, #333, #555); /* Dark gradient with shine */
+}
 
+/* Optional: Add shine effect to navbar links */
+.navbar-nav .nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .active {
+    color: #000; /* Highlight color */
+}
+
+</style>
 
 <body>
   <?php include 'partials/header.php'; ?>
@@ -99,6 +114,8 @@
   <script src="<?php echo base_url('assets/js_calender/popper.js'); ?>"></script>
   <script src="<?php echo base_url('assets/js_calender/bootstrap.min.js'); ?>"></script>
   <script src="<?php echo base_url('assets/js_calender/main.js'); ?>"></script>
+  <script src="<?php echo base_url('assets/js/main_nav.js'); ?>"></script>
+
 
   <!-- Template Main JS File -->
   <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>

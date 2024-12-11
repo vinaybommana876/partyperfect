@@ -13,6 +13,18 @@
 			width: 60%;
 		}
 
+		#main>.details {
+			width: 38%;
+		}
+
+		.section-title {
+			padding-bottom: 10px;
+		}
+
+		.text3 {
+			font-size: 20px;
+		}
+
 		@media (max-width: 768px) {
 
 			#main>.location:first-of-type {
@@ -37,6 +49,14 @@
 				-o-transition: 0.3s;
 				transition: 0.3s;
 				z-index: -1;
+			}
+
+			.text {
+				display: none;
+			}
+
+			.tex {
+				font-size: 10px !important;
 			}
 
 			.head-day {
@@ -65,6 +85,58 @@
 				padding: 10px 0 30px 0;
 				position: relative;
 			}
+
+			.location,
+			.details {
+				margin-bottom: 10px;
+			}
+
+			.location {
+				background-color: #f9f9f9;
+				margin-top: 10px;
+				padding: 0px;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			}
+
+			.text1 {
+				font-size: 25px !important;
+			}
+
+			#main>.details {
+				width: 100%;
+				margin-top: 10px;
+			}
+
+
+			.timeslot button {
+				padding: 2.5px 5px !important;
+				margin-right: 5px;
+				font-size: 15px!important;
+			}
+
+			button,
+			select {
+				font-size: 16.5px;
+			}
+
+			.section-title {
+				padding-bottom: 0px;
+			}
+
+			.details>img {
+				width: 100%;
+				height: 30%;
+
+			}
+
+			.text3 {
+				font-size: 15px;
+			}
+
+			.timeslot {
+				margin-top: 0px;
+			}
 		}
 	</style>
 
@@ -76,19 +148,18 @@
 						<div class="container">
 							<div style="width:100%;">
 								<div class="location" style="width:100%;  box-shadow: none;">
-									<div class="section-title" style="padding-bottom: 10px;">
+									<div class="section-title">
 										<h2>
 											<a href="<?php echo base_url() ?>" style="text-decoration: none; color: inherit;">
 												<i class="ri-arrow-left-line"></i>Back
 											</a>
 										</h2>
-										<p>Book Now</p>
+										<p class="text1">Book Now</p>
 									</div>
-									<p style="font-size: 18px; line-height: 10px; ">Hii, User we're waiting for your booking...!!</p>
-									<p style="font-size: 18px; line-height: 10px;">Visakhapatnam (1 available)</p>
-									<p style="font-size: 15px; line-height: 25px;  color: #263D4D;font-weight: 700; text-transform: uppercase;font-family: 'Poppins', sans-serif; font-family: 'Poppins', sans-serif;">ADDRESS:</p>
-									<p style="font-size: 15px; line-height: 10px;">Visakhapatnam (1 available)</p>
-									<a href=" #">(4.9 star Google Rating)</a>
+									<!-- <p class="text" style="font-size: 18px; line-height: 10px; ">Hii, User we're waiting for your booking...!!</p> -->
+									<!-- <p class="text" style="font-size: 18px; line-height: 10px;">Visakhapatnam (1 available)</p> -->
+									<p class="text" style="font-size: 15px; line-height: 25px;  color: #263D4D;font-weight: 700; text-transform: uppercase;font-family: 'Poppins', sans-serif; font-family: 'Poppins', sans-serif;">ADDRESS:</p>
+									<p class="tex" style="font-size: 15px; line-height: 10px;">Visakhapatnam (1 available)<a class="text" href=" #"> (4.9 star Google Rating)</a></p>
 								</div>
 							</div>
 							<div class="row">
@@ -182,8 +253,8 @@
 						</div>
 					</div>
 
-					<div class="details" style="width: 38%;">
-						<div class="section-title" style="padding-bottom:20px">
+					<div class="details">
+						<div class="section-title">
 							<p style="font-size: 23px; line-height: 23px; ">Private theater in Vizag</p>
 							<h2>
 								<a style="text-decoration: none; line-height: 23px; font-size:12px; color: inherit;">
@@ -192,7 +263,7 @@
 							</h2>
 						</div>
 						<img src="<?php echo base_url('assets/img/standard_1_comp.jpg'); ?>" alt="Theater Image" width="80%" height="20%">
-						<p style="font-size: 20px;">Choose your flexible slot to book</p>
+						<p class="text3">Choose your flexible slot to book</p>
 						<div class="timeslot" id="time-slots"></div>
 						<p style="padding-top:10px;">(Just pay <b>₹700 advance</b> to book)</p>
 						<div style="display: flex;">
